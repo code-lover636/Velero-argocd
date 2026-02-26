@@ -756,7 +756,8 @@ nodeAgent:
   dnsConfig: {}
 
   # Update strategy to use for the node-agent daemonset. Optional.
-  updateStrategy: {}
+  updateStrategy:
+    type: Recreate
 
 # Backup schedules to create.
 # Eg:
