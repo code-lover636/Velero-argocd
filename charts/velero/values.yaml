@@ -344,7 +344,7 @@ metrics:
 kubectl:
   image:
     repository: docker.io/bitnamilegacy/kubectl
-    tag: latest
+    tag: "1.31"
     # Digest value example: sha256:d238835e151cec91c6a811fe3a89a66d3231d9f64d09e5f3c49552672d271f38.
     # If used, it will take precedence over the kubectl.image.tag.
     # digest:
@@ -756,8 +756,7 @@ nodeAgent:
   dnsConfig: {}
 
   # Update strategy to use for the node-agent daemonset. Optional.
-  updateStrategy:
-    type: Recreate
+  updateStrategy: {}
 
 # Backup schedules to create.
 # Eg:
